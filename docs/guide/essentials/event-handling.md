@@ -91,7 +91,7 @@ function warn(message, event) {
 }
 ```
 
-## 事件修饰符 ​
+## 事件修饰符 ​{#event-modifiers}
 
 在处理事件时调用 `event.preventDefault()` 或 `event.stopPropagation()` 是很常见的。尽管我们可以直接在方法内调用，但如果方法能更专注于数据逻辑而不用去处理 DOM 事件的细节会更好。
 

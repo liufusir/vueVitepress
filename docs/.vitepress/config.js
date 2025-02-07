@@ -8,7 +8,7 @@ export default {
   // 网站语言
   lang: "en-us",
   // 打包时将 meta 标签注入到 index.html 中
-  metaChunk: true,
+//   metaChunk: true,
   // 自定义网站图标
   head: [["link", { rel: "icon", type: "image/svg+xml", href: "/assets/logo.svg" }]],
   // 主题配置
