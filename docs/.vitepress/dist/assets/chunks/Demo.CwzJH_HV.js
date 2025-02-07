@@ -1,0 +1,1 @@
+/* empty css                                             */import{_ as o,c as s,o as r,r as t}from"./framework.u4S_pj4N.js";const c={},n={class:"demo"};function a(e,_){return r(),s("div",n,[t(e.$slots,"default")])}const m=o(c,[["render",a]]);export{m as D};
