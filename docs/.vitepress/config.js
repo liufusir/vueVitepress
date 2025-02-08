@@ -203,7 +203,6 @@ export default {
      * 如果当前环境是生产环境（NODE_ENV === 'production'），则基础路径设置为 GitHub Pages 的 URL。
      * 如果当前环境不是生产环境，则基础路径设置为根路径（'/'），适用于本地开发。
      */
-    base:"https://yuzhizhe1.github.io/vueVitepress/",
 
     // 开发服务器配置
     server: {
@@ -215,4 +214,5 @@ export default {
       },
     },
   },
+  base:"https://yuzhizhe1.github.io/vueVitepress/",
 };
