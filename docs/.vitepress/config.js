@@ -8,9 +8,11 @@ export default {
   // 网站语言
   lang: "en-us",
   // 打包时将 meta 标签注入到 index.html 中
-//   metaChunk: true,
+  //   metaChunk: true,
   // 自定义网站图标
-  head: [["link", { rel: "icon", type: "image/svg+xml", href: "/assets/logo.svg" }]],
+  head: [
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/logo.svg" }],
+  ],
   // 主题配置
   themeConfig: {
     search: {
@@ -22,7 +24,7 @@ export default {
     // 网站标题
     siteTitle: "Vue.js",
     // 网站图标
-    logo: "/assets/logo.svg",
+    logo: "/logo.svg",
     // 可以添加更多 outline 相关的配置项，以下是一些可能的扩展配置示例：
     outlineTitle: "本页",
     // 自定义出现在上一页和下一页链接上方的文本
@@ -108,27 +110,33 @@ export default {
         {
           text: "深入组件",
           base: "/guide/components/",
-          items: [{ 
-            text: "注册", 
-            link: "registration" 
-        },{
-           text:'Props',
-           link:"props" 
+          items: [
+            {
+              text: "注册",
+              link: "registration",
+            },
+            {
+              text: "Props",
+              link: "props",
+            },
+            {
+              text: "事件",
+              link: "events",
+            },
+            {
+              text: "组件 v-model",
+              link: "v-model",
+            },
+            {
+              text: "透传 Attributes",
+              link: "attrs",
+            },
+            {
+              text: "插槽",
+              link: "slots",
+            },
+          ],
         },
-        {
-          text:'事件',
-          link:"events"
-        },{
-            text:'组件 v-model',
-            link:"v-model"
-        },{
-            text:'透传 Attributes',
-            link:'attrs'
-        },{
-            text:'插槽',
-            link:'slots'
-        }
-    ]},
       ],
     },
 
@@ -190,8 +198,16 @@ export default {
   },
   // Vite 配置
   vite: {
-    build: {},
-    // plugins: [pagefindPlugin()],
+    /**
+     * 根据当前环境设置项目的基础路径。
+     * 如果当前环境是生产环境（NODE_ENV === 'production'），则基础路径设置为 GitHub Pages 的 URL。
+     * 如果当前环境不是生产环境，则基础路径设置为根路径（'/'），适用于本地开发。
+     */
+    base:
+      process.env.NODE_ENV === "production"
+        ? "https://yuzhizhe1.github.io/vueVitepress/"
+        : "/",
+
     // 开发服务器配置
     server: {
       // 开发服务器端口
@@ -199,8 +215,7 @@ export default {
       // 开发服务器监听地址
       host: "0.0.0.0",
       hmr: {
-        overlay: false
-      }
+      },
     },
   },
-}
+};

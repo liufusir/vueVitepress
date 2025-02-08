@@ -247,4 +247,4 @@ const objectOfAttrs = {
 之后在讲到 [`v-on`](/guide/essentials/event-handling.html#event-modifiers) 和 [`v-model`](/guide/essentials/forms.html#modifiers) 的功能时，你将会看到其他修饰符的例子。
 
 最后，在这里你可以直观地看到完整的指令语法：
-![指令语法图](/assets/directive.DtZKvoAo.png)
+![指令语法图](/directive.DtZKvoAo.png)

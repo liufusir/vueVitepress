@@ -22,7 +22,7 @@
 
 `<slot>` 元素是一个 **插槽出口** (slot outlet)，标示了父元素提供的 **插槽内容** (slot content) 将在哪里被渲染。
 
-![插槽图示](/assets/slots.CKcE8XYd.png)
+![插槽图示](/slots.CKcE8XYd.png)
 
 最终渲染出的 DOM 是这样：
 
@@ -168,7 +168,7 @@ Vue 组件的插槽机制是受[原生 Web Component `<slot>` 元素](https://de
 
 `v-slot` 有对应的简写 `#`，因此 `<template v-slot:header>` 可以简写为 `<template #header>`。其意思就是“将这部分模板片段传入子组件的 header 插槽中”。
 
-![具名插槽图示](/assets/named-slots.CCIb9Mo_.png)
+![具名插槽图示](/named-slots.CCIb9Mo_.png)
 
 下面我们给出完整的、向 `<BaseLayout>` 传递插槽内容的代码，指令均使用的是缩写形式：
 
@@ -312,7 +312,7 @@ function BaseLayout(slots) {
 </MyComponent>
 ```
 
-![scoped slots diagram](/assets/scoped-slots.B67tIPc5.svg)
+![scoped slots diagram](/scoped-slots.B67tIPc5.svg)
 子组件传入插槽的 props 作为了 `v-slot` 指令的值，可以在插槽内的表达式中访问。
 
 你可以将作用域插槽类比为一个传入子组件的函数。子组件会将相应的 props 作为参数传给它：
