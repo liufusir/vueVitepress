@@ -27,7 +27,7 @@ jobs:
 
     # 添加一个步骤，用于安装项目依赖
     - name: Install dependencies
-      run: -npm install
+      run: pnpm install
 
     # 添加一个步骤，用于构建 VitePress 项目
     - name: Build VitePress
