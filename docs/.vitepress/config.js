@@ -222,5 +222,5 @@ export default {
       },
     ],
   },
-  base:process.env.NODE_ENV === 'production' ? 'https://yuzhizhe1.github.io/vueVitepress/' : '/',
+  base:process.env.NODE_ENV === '/production' ? '/vueVitepress/' : '/',
 };
