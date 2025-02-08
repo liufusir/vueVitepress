@@ -27,7 +27,7 @@ jobs:
     # 添加一个步骤，用于安装 pnpm
     - name: Install pnpm
       run: npm install -g pnpm
-
+      
     # 添加一个步骤，用于安装项目依赖
     - name: Install dependencies
       run: pnpm install
