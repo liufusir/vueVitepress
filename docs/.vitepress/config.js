@@ -214,5 +214,13 @@ export default {
       },
     },
   },
-  base:"https://yuzhizhe1.github.io/vueVitepress/",
+  rewrites: {
+    before: [
+      {
+        from: '/(.*)',
+        to: '/index.html',
+      },
+    ],
+  },
+  base:process.env.NODE_ENV === 'production' ? 'https://yuzhizhe1.github.io/vueVitepress/' : '/',
 };
